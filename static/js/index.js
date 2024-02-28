@@ -64,8 +64,8 @@ function update() {
     //Выстрел
     if (timer % 30 === 0) {
         fire.push({ x: ship.x + 10, y: ship.y, dx: 0, dy: -5.2 });
-        //fire.push({ x: ship.x + 10, y: ship.y, dx: 0.5, dy: -5.2 });
-        //fire.push({ x: ship.x + 10, y: ship.y, dx: -0.5, dy: -5.2 });
+        fire.push({ x: ship.x + 10, y: ship.y, dx: 0.5, dy: -5.2 });
+        fire.push({ x: ship.x + 10, y: ship.y, dx: -0.5, dy: -5.2 });
     }
     //Движение пули
     for (let i in fire) {
