@@ -49,7 +49,7 @@ function update() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     //Генерация астероидов
     timer++
-    if (timer % 10 === 0) {
+    if (timer % 1 === 0) {
         aster.push({
             x: getRandomArbitrary(50, 550),
             //x: 300,
@@ -62,7 +62,7 @@ function update() {
         })
     }
     //Выстрел
-    if (timer % 3 === 0) {
+    if (timer % 1 === 0) {
         fire.push({ x: ship.x + 10, y: ship.y, dx: 0, dy: -5.2 });
         fire.push({ x: ship.x + 10, y: ship.y, dx: 0.5, dy: -5.2 });
         fire.push({ x: ship.x + 10, y: ship.y, dx: -0.5, dy: -5.2 });
